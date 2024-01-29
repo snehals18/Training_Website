@@ -5,26 +5,9 @@
     --dark: #181d38;
 }
 
-.animation-text {
-    overflow: hidden;
-    font-family: #ffffff sans-serif;
-    animation: letterAnimation 3s steps(1000 , end)  infinite alternate-reverse;
-    white-space: nowrap;
-  
-    
-  }
+/* Animation Typing */
 
-
-@keyframes letterAnimation {
-    0% {
-        width: 0%;
-    }
-    100% {
-      width: 100%;
-    }
-    
-}
-   @keyframes typing {
+@keyframes typing {
     from {
       width: 0;
     }
@@ -39,10 +22,46 @@
   
   .typing-text {
     display: inline-block;
+    margin-bottom: 100px;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(50) infinite alternate-reverse;
   }
+  
+  @media (max-width: 768px) {
+    .typing-text {
+        font-size: xx-small;
+        width: 10px;
+        height: 30px;
+    }
+  }
+
+
+  .typing-text1 {
+    display: inline-block;
+    margin-bottom: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(50) infinite alternate-reverse;
+
+    overflow: hidden;
+    font-family: #ffffff sans-serif;
+    animation: letterAnimation 3s steps(1000)  infinite alternate-reverse;
+    white-space: nowrap;
+    font: font-bold;	
+    font-family: 10px;  
+  }
+  
+ 
+@keyframes letterAnimation {
+    0% {
+        width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+    
+}  
   
 .fw-medium {
     font-weight: 600 !important;
