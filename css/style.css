@@ -25,7 +25,7 @@
     margin-bottom: 100px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(50) infinite alternate-reverse;
+    animation: typing 3s steps(5000) infinite alternate-reverse;
   }
   
   @media (max-width: 768px) {
@@ -33,7 +33,7 @@
         font-size: xx-small;
         width: 10px;
         height: 30px;
-    }
+            }
   }
 
 
@@ -42,12 +42,7 @@
     margin-bottom: 100px;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(50) infinite alternate-reverse;
-
-    overflow: hidden;
-    font-family: #ffffff sans-serif;
     animation: letterAnimation 3s steps(1000)  infinite alternate-reverse;
-    white-space: nowrap;
     font: font-bold;	
     font-family: 10px;  
   }
